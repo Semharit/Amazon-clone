@@ -21,6 +21,12 @@ const LowerHeader = () => {
 
 export default LowerHeader;
 
+
+
+
+
+
+
 // function LowerHeader() {
 //   return (
 //     <div className={classes.lower_container}>

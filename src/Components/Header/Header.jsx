@@ -35,7 +35,7 @@ const Header = () => {
               </span>
               <div>
                 <p>Delivering </p>
-                <span>Silver Spring</span>
+                <span>Silver Spring MD</span>
               </div>
             </div>
           </div>

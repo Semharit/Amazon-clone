@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
-// import classes from './result.module.css'
+import React, {useState, useEffect } from 'react'
+import classes from './results.module.css'
 import Layout from '../../Components/Layout/Layout'
 import { useParams } from 'react-router-dom';
 import axios from 'axios'
 import { productUrl } from '../../Api/endPoints';
 import ProductCard from '../../Components/Product/ProductCard';
+import Loader from '../../Components/Loader/Loader';
+
 
 function Results() {
   const [results, setResults] = useState([]);
@@ -30,12 +32,12 @@ function Results() {
 
   return (
     <Layout>
-      <section>
+      <section className={classes.resuls}>
         <h1 style={{ padding: "30px" }}>Results</h1>
         <p style={{ padding: "30px" }}>Category / {categoryName}</p>
         <hr />
         {isLoading ? (
-          <Loading />
+          <Loader/>
         ) : error ? (
           <p style={{ color: "red" }}>{error}</p>
         ) : results.length === 0 ? (

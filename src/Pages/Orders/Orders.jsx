@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import LayOut from "../../Components/Layout/Layout";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
-import classes from "./Orders.module.css";
+import classes from "./orders.module.css";
 import { db } from "../../Utility/FireBase";
 // import { collection,doc,orderBy,onSnapshot } from 'firebase/firestore'
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
