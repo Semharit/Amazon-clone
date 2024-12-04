@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import LayOut from "../../Components/Layout/Layout";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
-import classes from "./orders.module.css";
+import Classes from "./orders.module.css";
 import { db } from "../../Utility/FireBase";
 // import { collection,doc,orderBy,onSnapshot } from 'firebase/firestore'
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
@@ -38,8 +38,8 @@ function Orders() {
 
   return (
     <LayOut>
-      <section className={classes.container}>
-        <div className={classes.orders_container}>
+      <section className={Classes.container}>
+        <div className={Classes.orders_container}>
           <h2>Your orders</h2>
           {/* ordered items */}
           {orders?.length == 0 && (
