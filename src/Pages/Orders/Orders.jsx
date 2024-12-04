@@ -9,29 +9,7 @@ import ProductCard from "../../Components/Product/ProductCard";
 
 function Orders() {
   const [{ user }, dispatch] = useContext(DataContext);
-  const [orders, setOrders] = useState([]);
-  // useEffect(()=>{
-  //   if(user)
-  //   {
-  //     db.collection("user").doc(user.uid).collection("orders").orderBy("created","desc").onSnapshot((snapshot)=>{
-  //       console.log(snapshot);
-  //       setOrders(
-  //         snapshot.docs.map((doc)=>({
-
-  //           id:doc.id,
-  //           data:doc.data(),
-  //         }
-
-  //         ))
-  //       )
-  //     })
-  //   }
-  //   else
-  //   {
-  //     setOrders([]);
-  //   }
-
-  // },[])
+  const [orders, setOrders] = useState([]); 
   useEffect(() => {
     if (user) {
       // Reference the orders collection under the specific user
