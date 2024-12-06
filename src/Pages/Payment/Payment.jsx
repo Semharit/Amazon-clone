@@ -98,8 +98,8 @@ function Payment() {
           <h3>Delivery Address</h3>
           <div>
             <div>{user?.email}</div>
-            <div>Matthew</div>
-            <div>Charlotte, NC</div>
+            <div>Semhar</div>
+            <div>Silver Spring, MD</div>
           </div>
         </div>
         <hr />

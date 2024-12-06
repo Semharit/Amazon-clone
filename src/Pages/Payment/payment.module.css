@@ -15,6 +15,7 @@
     gap: 5px; /* Reduced gap between flex items */
     padding: 0; /* Remove unnecessary padding around the flex container */
     justify-content: flex-start; /* Align items to the left */
+    margin-top: 20px;
 }
 
 .flex h3 {
@@ -29,6 +30,7 @@
 .payment_card_container {
     max-width: 350px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .payment_details {
@@ -47,6 +49,7 @@
 
 .payment_details button {
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
     border: none;
     background-color: var(--primary-color);
@@ -75,6 +78,7 @@
     flex-wrap: wrap;
     gap: 5px; /* Tight gap between products */
     justify-content: flex-start; /* Align items to the left */
+    margin-bottom: 20px;
 }
 
 .product_item {
@@ -95,6 +99,7 @@
 
     .payment_card_container {
         max-width: 100%; /* Makes the card container take full width on mobile */
+        
     }
 
     .payment_details {
